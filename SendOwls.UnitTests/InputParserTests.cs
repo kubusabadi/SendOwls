@@ -1,6 +1,6 @@
-using System;
+
 using Xunit;
-using SendOwls.Logic;
+using SendOwls.Logic.Parsers;
 using SendOwls.UnitTests.Model;
 
 namespace SendOwls.UnitTests
@@ -16,6 +16,7 @@ namespace SendOwls.UnitTests
             Assert.Equal(TestObject.TestEmailAddress, input.EmailAddress);
             Assert.Equal(TestObject.TestEmailPath, input.EmailFilePath);
             Assert.Equal(TestObject.TestRecepientsPath, input.RecepientsFilePath);
+            Assert.Equal(TestObject.TestSmtpServer, input.SmtpServer);
         }
     }
 }
